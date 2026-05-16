@@ -6,7 +6,6 @@ class Booking(models.Model):
     no_of_guests = models.IntegerField()
     booking_date = models.DateTimeField()
 
-    # This changes how it looks in the admin panel (shows the name instead of "Booking object")
     def __str__(self):
         return self.name
 
@@ -16,4 +15,4 @@ class Menu(models.Model):
     inventory = models.IntegerField()
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {self.price:.2f}'
