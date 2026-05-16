@@ -1,0 +1,6 @@
+Username / Password
+
+Superuser:
+admin / password
+
+test1 / test123456
